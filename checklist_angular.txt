@@ -1,0 +1,5 @@
+1. instalar o node.js (nodejs.org)
+2. npm --version (check do nodejs instalado)
+3. instalar o angular (https://angular.io/guide/setup-local)
+Executar os comandos  (npm install -g @angular/cli) (Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned)
+4. instalar o angular
