@@ -11,5 +11,4 @@ Executar os comandos  (npm install -g @angular/cli) (Set-ExecutionPolicy -Scope 
 1. sempre executar o git status (verificar situação)
 2. se vermelho -> git add.
 3. se verde git commit -m "nome do commit"
-4.se tudo ok, git push
-5.
+4.se tudo ok, git push (atualiza no git hub)
