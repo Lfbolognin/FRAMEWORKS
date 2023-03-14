@@ -5,10 +5,25 @@ Executar os comandos  (npm install -g @angular/cli) (Set-ExecutionPolicy -Scope 
 4. instalar o angular
 
 
-
+GIT IGNORE (EVITA ALGUMAS COISAS A IR PRO GITHUB)
 
 # ROTINAS DO GIT
+(git clone link)
 1. sempre executar o git status (verificar situação)
 2. se vermelho -> git add.
 3. se verde git commit -m "nome do commit"
 4.se tudo ok, git push (atualiza no git hub)
+
+
+
+#---- angular
+
+ng new nome-projeto (criar um projeto)
+
+
+
+
+TRABALHO FRAMEWORKS
+
+https://www.figma.com/ OU CANVA
+
