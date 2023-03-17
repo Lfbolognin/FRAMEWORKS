@@ -1,6 +1,7 @@
 1. instalar o node.js (nodejs.org)
 2. npm --version (check do nodejs instalado)
 3. instalar o angular (https://angular.io/guide/setup-local)
+    3.1 npm install @angular/cli
 Executar os comandos  (npm install -g @angular/cli) (Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned)
 4. instalar o angular
 
@@ -27,3 +28,5 @@ TRABALHO FRAMEWORKS
 
 https://www.figma.com/ OU CANVA
 
+
+ng serve -o (rodar e abrir o projeto)
