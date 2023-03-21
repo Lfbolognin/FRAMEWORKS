@@ -15,18 +15,26 @@ GIT IGNORE (EVITA ALGUMAS COISAS A IR PRO GITHUB)
 3. se verde git commit -m "nome do commit"
 4.se tudo ok, git push (atualiza no git hub)
 
+5. git clone endereço.git . (comando para copiar do githun para o vscode)
+5.1 npm install (dentro da pasta do projeto para instalar o nmodules)
 
+
+-------- para remover usuario anterior ---------
+
+git config --system --unset credential.helper
+
+npm install -> instala o que está em falta
 
 #---- angular
 
 ng new nome-projeto (criar um projeto)
 
-
-
-
 TRABALHO FRAMEWORKS
 
 https://www.figma.com/ OU CANVA
 
-
 ng serve -o (rodar e abrir o projeto)
+
+
+
+
