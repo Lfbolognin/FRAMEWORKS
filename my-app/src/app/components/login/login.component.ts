@@ -7,4 +7,31 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+ isError = false;
+
+ isCorrect = false;
+
+user = ""
+pwd = ""
+
+
+ login(){   
+
+//     this.isError = true;
+    
+// console.log("User = " + this.user + " Password = " + this.pwd)
+
+
+
+if (
+  this.user == "luiz" && this.pwd == "luiz"){
+this.isCorrect = true;
+this.isError = false;
+  }
+else{
+  this.isCorrect = false;
+  this.isError = true;
+ 
+}
+ }
 }
