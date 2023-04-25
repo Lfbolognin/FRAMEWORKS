@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="login">
+    <h2>Sign in</h2>
+
+    <div *ngIf="isError" class="error">
+      <i class="bx bxs-error"></i><span> User or passoword incorrect</span>
+    </div>
+
+    <div *ngIf="isCorrect" class="right">
+      <i class="bx bx-check"></i><span> Login Correct</span>
+    </div>
+
+    <div class="input">
+      <i class="bx bx-envelope-open"></i>
+      <input
+        type="text"
+        name="email"
+        id="email"
+        placeholder="E-mail"
+        [(ngModel)]="user"
+      />
+    </div>
+
+    <div class="input">
+      <i class="bx bx-lock-alt"></i>
+      <input
+        type="password"
+        name="passoword"
+        id="passoword"
+        placeholder="passoword"
+        [(ngModel)]="pwd"
+      />
+      <i class="bx bx-low-vision"></i>
+    </div>
+
+    <div class="remember">
+      <div>
+        <input type="checkbox" name="remember" id="remember" />
+        <h4>Remember me</h4>
+      </div>
+      <h4>Forget Passoword?</h4>
+    </div>
+
+    <button (click)="login()">SIGN IN</button>
+    <h3>Don't have an account? Create</h3>
+  </div>
+</div>
