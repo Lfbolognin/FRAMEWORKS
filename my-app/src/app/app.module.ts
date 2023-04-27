@@ -7,12 +7,18 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { TrabalhoFotosComponent } from './components/trabalho-fotos/trabalho-fotos.component';
+import { CreateComponent } from './components/create/create.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    TrabalhoFotosComponent
+    TrabalhoFotosComponent,
+    CreateComponent,
+    PageNotFoundComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

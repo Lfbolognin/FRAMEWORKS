@@ -1,0 +1,47 @@
+.container{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+
+
+.content{
+    background: #fafafd;
+    border: 1px solid brown;
+}
+
+.user_info{
+    display: grid;
+    grid-template-rows: 180px 200px 1fr;
+}
+
+.profile{
+background: rebeccapurple;
+display: grid;
+grid-template-rows: auto auto;
+justify-content: center;
+justify-items: center;
+padding: 10px;
+}
+
+
+
+.profile .img{
+
+    width: 100px;
+    height: 100px;
+    background: forestgreen;
+    border-radius: 50%;
+}
+
+
+.member{
+    background: rgb(36, 206, 87);
+}
+
+.menu{
+        background: rgb(153, 51, 51);
+}
