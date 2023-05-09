@@ -1,10 +1,10 @@
-:root{
-  --bg-menu:#e2e9ef;
+:root {
+  --bg-menu: #e2e9ef;
   --shadow: #696969;
 }
 
 .container {
-  margin: 20px;
+  margin: 20 auto;
   width: 90%;
   height: 100vh;
   display: grid;
@@ -15,7 +15,7 @@
 
 .user_info {
   display: grid;
-  grid-template-rows: 150px  1fr;
+  grid-template-rows: 150px 1fr;
 }
 
 .profile {
@@ -36,13 +36,12 @@
 .user_info .menu li {
   list-style: none;
   padding: 10px 15px;
-  
 }
-li:hover{
-    border-radius: 8px;
-    background-color: #e0dada; 
-    transition: 0.5s;
-    opacity: 0.7;
+li:hover {
+  border-radius: 8px;
+  background-color: #e0dada;
+  transition: 0.5s;
+  opacity: 0.7;
 }
 
 .user_info .menu li i {
@@ -59,39 +58,32 @@ li:hover{
 
 .content {
   display: grid;
-  grid-template-rows: 100px 200px  1fr;
+  grid-template-rows: 100px 200px 1fr;
   padding: 35px;
 }
 
-.content .search{
+.content .search {
   display: grid;
   grid-template-columns: 150px auto;
   justify-content: space-between;
   align-items: center;
 }
 
-.info{
-  background: green;
-}
-
-.adm{
-  background: indianred;
-}
-
-.user, .user_info{
+.user,
+.user_info {
   background: #f7f8fa;
 }
 
-.content .search .input{
+.content .search .input {
   background: #f1f8ff;
-justify-content: space-between;
-height: 30px;
-width: 300px;
-align-items: center;
-border-radius: 8px;
-display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 300px;
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
 }
-.content .search .input input{
+.content .search .input input {
   background: transparent;
   border: none;
   margin-left: 15px;
@@ -100,11 +92,9 @@ display: flex;
   outline: none;
 }
 
-.content .search .input .icon{
-  margin: 5px;
+.content .search .input .icon {
   height: 100%;
   width: 37px;
-  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,4 +102,65 @@ display: flex;
   color: #fff;
   font-size: 24px;
   cursor: pointer;
+}
+
+.content .info .box1 {
+  background: #fadbdd;
+}
+.content .info .box2 {
+  background: #f0ecfe;
+}
+
+.content .info {
+  display: grid;
+  grid-template-columns: 2.7fr 1.3fr;
+  gap: 30px;
+  margin: 5px;
+}
+
+.content .adm {
+  display: grid;
+  grid-template-columns: 1.4fr 1.1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.content .adm .new_task {
+  background: red;
+}
+
+.content .adm .team_act {
+  background: yellow;
+}
+
+.bx plus {
+  color: white;
+}
+.content .adm .team_act .title {
+  height: 50px;
+  background: #e5f7f0;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.content .adm .team_act .title span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.content .adm .team_act .title .ball{
+  background: #43af74;
+  display: flex;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px 0 25px;
+}
+.content .adm .team_act .title .ball i{
+  color: #fff;
+  font-size: 22px;
 }
