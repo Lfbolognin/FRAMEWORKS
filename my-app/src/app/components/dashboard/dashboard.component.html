@@ -1,10 +1,8 @@
 <div class="container">
   <div class="user_info">
     <div class="profile">
-      <div class="img"></div>
-      <h2>Hello, {{user}} !</h2>
+      <h2>Hello, {{ user }} !</h2>
     </div>
-
 
     <div class="menu">
       <ul>
@@ -34,55 +32,51 @@
 
   <div class="content">
     <div class="search">
-        <div class="date">
-            <h4>Dashboard</h4>
-            <h5>{{currentDate | date:'dd/MM/yyyy'}}</h5>
-        </div>
-        <div class="input">
-            <input 
-            type="text" 
-            name="pesq" 
-            id="pesq"
-            placeholder="Search..."/>
+      <div class="date">
+        <h4>Dashboard</h4>
+        <h5>{{ currentDate | date : "dd/MM/yyyy" }}</h5>
+      </div>
+      <div class="input">
+        <input type="text" name="pesq" id="pesq" placeholder="Search..." />
 
-            <div class="icon">
-                <i class='bx bx-search-alt-2' ></i>
-            </div>
+        <div class="icon">
+          <i class="bx bx-search-alt-2"></i>
         </div>
+      </div>
     </div>
 
     <div class="info">
-
       <div class="box1"></div>
 
       <div class="box2"></div>
     </div>
 
-
     <div class="adm">
+      <div class="team_act">
+        <div class="title">
+          <div class="ball"><i class="bx bx-plus"></i></div>
+          <span>Membro do time</span>
+        </div>
+      </div>
 
-  <div class="team_act">
-
-  <div class="title">
-
-    <div class="ball"><i class='bx bx-plus'></i>
-      
-    </div>
-    <span>Membro do time</span>
-  </div>
-
-</div>
-
-
-<div class="new_task"></div>
-
-
-
+      <div class="new_task"></div>
     </div>
   </div>
-
 
   <div class="user">
-
+    <div class="icones">
+      <i class='bx bxs-bell'></i>
+      <i class='bx bxs-cog' ></i>
+      <i class='bx bxs-user' ></i>
+    </div>
+    <div class="perfil">
+      <div class="ball">
+        <img src="./assets/avatar.png" alt="">
+      </div>
+      <h3>Luiz</h3>
+      <H5>lalalala</H5>
+    </div>
+    <div class="trofeu"></div>
+    <div class="status"></div>
   </div>
 </div>
