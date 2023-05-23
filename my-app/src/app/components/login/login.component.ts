@@ -1,4 +1,6 @@
+import { DashboardComponent } from './../dashboard/dashboard.component';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,20 +8,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  constructor(private router:Router) { }
 
- isError = false;
+isError = false;
 
- isCorrect = false;
+isCorrect = false;
 
 user = ""
 pwd = ""
 
 
- login(){   
+login(){   
 
-//     this.isError = true;
-    
-// console.log("User = " + this.user + " Password = " + this.pwd)
+
 
 
 
@@ -27,11 +28,12 @@ if (
   this.user == "luiz" && this.pwd == "luiz"){
 this.isCorrect = true;
 this.isError = false;
+this.router.navigate (['/dashboard']);
   }
 else{
   this.isCorrect = false;
   this.isError = true;
- 
+  
 }
- }
+}
 }
