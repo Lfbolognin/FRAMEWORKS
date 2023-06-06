@@ -1,10 +1,11 @@
 .container{
-background:linear-gradient(#1dcfa9, #1a07c7);
+background:linear-gradient(#d0b9c9, #faa8d1);
 height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .img{
@@ -25,6 +26,5 @@ align-items: center;
 height: 30px;
 margin: 8px;
 outline: none;
-background:#c4da97;
 font-size: 20px;
 }

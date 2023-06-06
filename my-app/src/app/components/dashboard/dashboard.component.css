@@ -1,30 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap");
 
-:root {
-  --bg-menu: #e2e9ef;
-  --shadow: #696969;
-}
-
-a {
-  font-size: 12px;
-  color: #6957f8;
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 h3 {
   font-size: 16px;
-  font-weight: 6 00;
+  font-weight: 600;
 }
 
-h5{
-  font-size: 12px;
+a {
+  font-size: 13px;
+  color: #6957f8;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
+h5 {
+  font-size: 15px;
 }
+
+:root {
+  --bg-menu: #e2e9ef;
+
+  --shadow: #696969;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -32,38 +34,50 @@ h5{
   grid-template-columns: 200px 1fr 380px;
 }
 
-.user_info {
+.user-info {
   display: grid;
   grid-template-rows: 150px 1fr;
 }
 
-.user_info .menu li {
+.profile {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.member {
+  background: rgb(156, 156, 252);
+}
+
+.user-info .menu li {
   list-style: none;
-  padding: 10px 15px;
-}
-li:hover {
-  border-radius: 8px;
-  background-color: #e0dada;
-  transition: 0.5s;
-  opacity: 0.7;
+  padding: 15px 20px;
 }
 
-.user_info .menu li i {
-  color: var(--shadow);
-  font-size: 24px;
-  margin-right: 15px;
+.profile .img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgb(205, 157, 157);
 }
 
-.user_info .menu li a {
-  color: var(--shadow);
-  font-size: 25px;
+.user-info .menu li i {
+  font-size: 32px;
+  color: #5a5959;
+  margin-right: 20px;
+}
+
+.user-info .menu li a {
+  font-size: 16px;
+  color: #5a5959;
   text-decoration: none;
 }
 
 .content {
   display: grid;
-  grid-template-rows: 100px 200px 1fr;
-  padding: 20px;
+  grid-template-rows: 80px 150px 1fr;
+  padding: 0 20px;
 }
 
 .content .search {
@@ -73,89 +87,100 @@ li:hover {
   align-items: center;
 }
 
-.user,
-.user_info {
-  background: #f7f8fa;
-}
-
 .content .search .input {
   background: #f1f8ff;
-  justify-content: space-between;
-  height: 30px;
-  width: 300px;
-  align-items: center;
-  border-radius: 8px;
   display: flex;
-}
-.content .search .input input {
-  background: transparent;
-  border: none;
-  margin-left: 15px;
   height: 30px;
-  width: 160px;
-  outline: none;
+  width: 250px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
 }
 
 .content .search .input .icon {
   height: 100%;
-  width: 37px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: #6555e2;
-  color: #fff;
-  font-size: 24px;
+  width: 35px;
   cursor: pointer;
+  background: #dd5b8b;
+  justify-content: center;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.content .search .input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: 15px;
+  height: 30px;
+  width: 160px;
+}
+
+li:hover {
+  background: rgb(206, 205, 205);
+  cursor: pointer;
+}
+.user,
+.user-info {
+  background: #f7f8fa;
+}
+
+.content .info {
+  grid-template-columns: 1fr 350px;
+  display: grid;
+  grid-template-columns: 2.7fr 1.3fr;
+  gap: 27px;
 }
 
 .content .info .box1 {
-  background: #fadbdd;
+  background: #fadbbd;
 }
 .content .info .box2 {
   background: #f0ecfe;
 }
 
-.content .info {
-  display: grid;
-  grid-template-columns: 2.7fr 1.3fr;
-  gap: 30px;
-  margin: 5px;
-}
-
 .content .adm {
   display: grid;
-  grid-template-columns: 1.4fr 1.1fr;
-  gap: 30px;
-  margin-top: 30px;
+  grid-template-columns: 1.3fr 1fr;
+  margin-top: 27px;
+  gap: 27px;
 }
 
-.content .adm .new_task {
-  background: red;
+.content .adm .task {
+  background: blue;
 }
-
-.content .adm .team_act {
-  background: yellow;
-}
-
-.bx plus {
-  color: white;
-}
-.content .adm .team_act .title {
-  height: 50px;
+.content .adm .team .title {
+  align-items: center;
   background: #e5f7f0;
   display: flex;
+  width: 500px;
+  height: 50px;
   border-radius: 5px;
+}
+.content .adm .team .title .ball {
+  background: #56aca6;
+  display: flex;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   align-items: center;
-  font-weight: bold;
+  justify-content: center;
+  margin: 0 15px 0 25px;
+}
+.content .adm .team .title .ball i {
+  color: white;
+  font-size: 22px;
 }
 
-.content .adm .team_act .title span {
-  font-weight: 600;
+.content .adm .team .title span {
   font-size: 18px;
+  font-weight: 600;
 }
-
 .content .adm .team_act .title .ball {
-  background: #43af74;
+  background: #d2e4e4;
   display: flex;
   border-radius: 50%;
   width: 30px;
@@ -170,9 +195,13 @@ li:hover {
 }
 .container .user {
   display: grid;
-  grid-template-rows: 70px 180px 120px 1fr;
+  grid-template-rows: 70px 180px 110px 1fr;
   border-radius: 15px;
   padding: 0 25px;
+}
+
+.container .user .status {
+  background: #f1f8ff;
 }
 
 .user .icones {
@@ -187,7 +216,7 @@ li:hover {
   color: #696969;
 }
 
-.user .icones i:hover {
+i:hover {
   transition: 0.5s;
   opacity: 0.7;
   cursor: pointer;
@@ -195,7 +224,9 @@ li:hover {
 
 .user .perfil img {
   width: 100px;
-  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .user .perfil {
   display: flex;
@@ -203,11 +234,8 @@ li:hover {
   justify-content: center;
   align-items: center;
 }
-
 .user .perfil h5 {
-  color: #6957f8;
-  font-size: 15px;
-  margin-top: 5px;
+  color: #dd5b8b;
 }
 
 .user .trofeu .box {
@@ -217,16 +245,16 @@ li:hover {
   border-radius: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-.user .trofeu {
-  display: grid;
-  place-items: center;
-  margin-bottom: 30px;
-}
-.user .trofeu .box {
   align-items: center;
   display: grid;
   justify-content: center;
+}
+.container .user .trofeu {
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: #f0ecfe;
+  margin-bottom: 25px;
 }
 
 .user .trofeu .box .ball {
@@ -237,109 +265,136 @@ li:hover {
   display: grid;
   place-items: center;
 }
-.user .trofeu .box .ball i {
+.user .trofeu .box .box-1 .ball i {
   font-size: 24px;
-  color: #6957f8;
+  color: #dd5b8b;
 }
 .user .trofeu .box .box-2 .ball i {
   font-size: 24px;
-  color: #d8691f;
+  color: #6758ef;
 }
 
-.user .trofeu .box .box-1,
-.user .trofeu .box .box-2 {
+.container .user .trofeu .box .box-1,
+.container .user .trofeu .box .box-2 {
   display: flex;
   align-items: center;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
 }
 
-.user .trofeu .box .box-1 .text h5 {
-  color: #6957f8;
+.container .user .trofeu .box .box-1 {
+  border-right: 1px solid #9c8f94;
 }
 
-.user .trofeu .box .box-2 .text h5 {
-  color: #d8691f;
+.container .user .trofeu .box .box-1 .text {
+  color: #dd5b8b;
+}
+.container .user .trofeu .box .box-2 .text {
+  color: #6758ef;
 }
 
-.user .trofeu .box .box-1 {
-  border-right: 1px solid #6957f8;
-}
-
-.user .status {
-}
-
-.user .status .user-title {
+.container .user .status .user-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 18px;
   margin: 15px 0;
 }
 
-.user .status .task-list {
-  background: #f47c4e;
+.container .user .status .task-list {
+  background: #dd5b8b;
   border-radius: 8px;
   color: #fff;
   display: flex;
   align-items: center;
   padding: 15px;
   gap: 15px;
+  margin-bottom: 15px;
   height: 40px;
-  margin: 10px;
 }
-.user .status .number span {
-  width: 50px;
-  height: 50px;
-  background: #ffffff31;
-  border-radius: 10px;
+.container .user .status .task-list .number {
+  width: 35px;
+  height: 35px;
+  background: #ffffff1f;
   display: grid;
   place-items: center;
   font-size: 18px;
-}
-
-.user .status .box {
-  background: #f47c4e;
   border-radius: 8px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  gap: 15px;
 }
 
 .container .user .status .task-list:nth-child(3) {
   background: #6758ef;
 }
 
-
-.user .status .recent-task {
+.container .user .status .recent-task {
   display: flex;
   justify-content: space-between;
-  margin: 15px;
-
 }
 
-.user .status .recent-task .status{
+.container .user .status .recent-task .numero {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
+  margin: 15px;
 }
 
-.user .status .recent-task .ball {
-width: 10px;
-height: 10px;
-border-radius: 50%;
-background: green;
+.container .user .status .recent-task .ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: green;
 }
-
-.recent-task .time{
-  color: #6957f8;
+.container .user .status .recent-task .time {
   font-size: 12px;
-  font-weight: 300;
+  color: #6758ef;
+  font-weight: 400;
 }
-.recent-task h5{
-  font-size: 16px;
-  font-weight: 600;
+.container .content .adm .team .box {
+  display: grid;
+  background: #f8fafd;
+  margin: 10px 0 10px 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container .content .adm .team .box .member-1 img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+.container .content .adm .team .box .member-1 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin: 0 15px 0 25px;
   padding: 15px;
+}
+
+.container .content .adm .box .member-1 h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.container .content .adm .box .member-1 h5 {
+  font-weight: 400;
+}
+.content .adm .team .detail-at .member-1 {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+.container .content .adm .team .detail-at img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.container .content .adm .team .detail-at {
+  display: grid;
+  background: #f8fafd;
+  margin: 10px 0 10px 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.content .adm .team .detail-at .member-1 .data {
+  margin-top: 10px;
 }

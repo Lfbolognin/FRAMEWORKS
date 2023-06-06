@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  nome = "Luiz"
-  count = 9
+  nome = "Rafaela";
+  count = 0;
 
   sub(){
 this.count--;

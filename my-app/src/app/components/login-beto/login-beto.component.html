@@ -1,0 +1,48 @@
+<div class="container">
+
+
+
+    <div class="img">
+        
+        <h1>Bem-vindo de volta!</h1>
+        <h5>É bom revê-lo:)</h5>
+
+    </div>
+    <div class="login">
+
+        <h2>Entrar</h2>
+
+        <div *ngIf="isError" class="error">
+
+            <i class='bx bxs-error'></i><span>Usuário ou senha incorretos!</span>
+
+        </div>
+
+        <div *ngIf="isCorrect" class="right">
+
+            <i class='bx bx-check'></i><span>Login aprovado!</span>
+
+        </div>
+
+        <div class="input">
+            <i class='bx bx-envelope-open'></i>
+            <input type="text" name="Email" id="Email" placeholder="E-mail" [(ngModel)]="user"/>
+        </div>
+
+        <div class="input">
+            <i class='bx bx-lock-alt'></i>
+            <input type="password" name="password" id="password" placeholder="Senha" [(ngModel)]="pwd"/> <i class='bx bx-low-vision' onclick="mostrarSenha()"></i>
+        </div>
+
+            <div class="remember">
+                <div>
+                    <input type="checkbox" name="remember" id="remember">
+                    <h4>Lembrar-me</h4>
+                </div>
+                <h4>Esqueceu a senha?</h4>
+            </div>
+            <button (click)="login()">CONTINUAR</button>
+            <h5>Novo por aqui? Crie uma conta!</h5>
+
+        </div>
+</div>

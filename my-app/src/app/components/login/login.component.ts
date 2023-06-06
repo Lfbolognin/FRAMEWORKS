@@ -1,6 +1,4 @@
-import { DashboardComponent } from './../dashboard/dashboard.component';
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,32 +6,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private router:Router) { }
+  isError = false;
 
-isError = false;
-
-isCorrect = false;
-
-user = ""
-pwd = ""
-
-
-login(){   
-
-
-
-
-
-if (
-  this.user == "luiz" && this.pwd == "luiz"){
-this.isCorrect = true;
-this.isError = false;
-this.router.navigate (['/dashboard']);
+  login(){
+    this.isError = true;
   }
-else{
-  this.isCorrect = false;
-  this.isError = true;
-  
-}
-}
 }

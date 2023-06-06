@@ -1,48 +1,46 @@
 <div class="container">
-  <div class="login">
-    <h2>Sign in</h2>
 
-    <div *ngIf="isError" class="error">
-      <i class="bx bxs-error"></i><span> User or passoword incorrect</span>
+    <img src="/assets/hellokitty.png" class="img">
+    <div class="header">
+        <i class='bx bxs-heart'></i>
+        <h1>Bem vindo de volta!</h1>
+        <i class='bx bxs-heart'></i>
     </div>
 
-    <div *ngIf="isCorrect" class="right">
-      <i class="bx bx-check"></i><span> Login Correct</span>
+    <div class="content">
+
+        <h2>Faça seu login:</h2>
+
+        <div *ngIf="isError" class="error">
+
+            <i class='bx bxs-error'></i><span>Usuário ou senha incorreto!</span>
+
+        </div>
+
+        <div class="login">
+            <i class='bx bxs-envelope'></i>
+            <label for="hero-name">Email:</label>
+            <input type="text" placeholder="Digite seu email" name="nome-pessoal" />
+        </div>
+
+        <div class="login">
+            <i class='bx bxs-lock'></i>
+            <label for="hero-name">Senha:</label>
+            <input type="password" placeholder="Digite sua senha" name="senha" /> <i class='bx bxs-low-vision'></i>
+        </div>
+
+
+        <div class="remember">
+            <div>
+                <input type="checkbox" name="remember" id="remember">
+                <h4>Lembrar-me</h4>
+              
+            </div>
+            <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+        </div>
+            
+            <button (click)="login()">Entrar</button>
+            <a href="#" class="criar_conta">Não tem uma conta? Crie agora</a>
     </div>
 
-    <div class="input">
-      <i class="bx bx-envelope-open"></i>
-      <input
-        type="text"
-        name="email"
-        id="email"
-        placeholder="E-mail"
-        [(ngModel)]="user"
-      />
-    </div>
-
-    <div class="input">
-      <i class="bx bx-lock-alt"></i>
-      <input
-        type="password"
-        name="passoword"
-        id="passoword"
-        placeholder="passoword"
-        [(ngModel)]="pwd"
-      />
-      <i class="bx bx-low-vision"></i>
-    </div>
-
-    <div class="remember">
-      <div>
-        <input type="checkbox" name="remember" id="remember" />
-        <h4>Remember me</h4>
-      </div>
-      <h4>Forget Passoword?</h4>
-    </div>
-
-    <button (click)="login()">SIGN IN</button>
-  
-    <h3>Don't have an account? Create</h3>
-  </div>
 </div>

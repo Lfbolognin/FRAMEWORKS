@@ -1,4 +1,3 @@
-import { LoginComponent } from './../login/login.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  user = "Luiz"
+  user = 'Rafa';
+  userr = 'Rafa!';
   currentDate = new Date();
-
 }

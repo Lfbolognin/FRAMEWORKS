@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.container {
+    background: rgba(220,227,233,255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 500px;
+    height: 480px;
+    background-image: url("/assets/login.png");
+    box-shadow:  10px 10px 10px rgb(54, 53, 56);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login {
+    background: rgba(248,249,250,255);
+    width: 430px;
+    height: 480px;
+    box-shadow:  10px 10px 10px rgb(54, 53, 56);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2{
+    color: rgb(62, 60, 60);
+}
+
+
+
+
+.input {
+    box-shadow: 2px 2px 12px 2px rgb(62, 60, 60);
+    width: 350px;
+    height: 40px;
+    border-radius: 17px;
+    margin: 12px;
+    padding-left: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.input input{
+    width: 270px;
+    height: 30px;
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+
+i{
+    font-size: 30px;
+    color: rgb(62, 60, 60);
+}
+
+.botoes {
+    display: flex;
+    width: 340px;
+    align-items: center;
+    justify-content: space-between;
+}
+.botoes > div {
+    display: flex;
+    gap: 2px;
+}
+
+
+button {
+    width: 170px;
+    height: 35px;
+    margin: 30px;
+    border-radius: 20px;
+    background: linear-gradient(rgba(201,86,147,255), rgba(226,92,152,255));
+    box-shadow: 5px 5px 10px #00000068;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:hover{
+    filter: brightness(120%);
+    background: rgb(195, 190, 190);
+    color: black;
+}
+
+.error {
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 7px;
+    width: 280px;
+    height: 40px;
+    background: #dca4bc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+}
+
+.error i {
+    color:rgb(5, 5, 5);
+    padding: 6px;
+    
+}
+
+.right {
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 7px;
+    width: 280px;
+    height: 40px;
+    background: rgba(86,164,158,255);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+}
+
+.right i {
+    color:rgb(5, 5, 5);
+    margin-right: 6px;
+    
+}
+.botao2 {
+    width: 170px;
+    height: 35px;
+    margin: 30px;
+    border-radius: 20px;
+    background: rgb(62, 60, 60);
+    box-shadow: 5px 5px 10px #00000068;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.botao2 i{
+    font-size: 20px;
+    color: #fff;
+    padding: 2px;
+}

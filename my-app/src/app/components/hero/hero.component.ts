@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
 
-  numeros = [5, 10, 20, 12, 25]
-  heroi = ["Flash", "Superman", "Batman", "Aquaman", "Hulk"]
+  numeros = [5, 10, 15, 20, 25]
 
+  heroes = ["Capitão América", "Homem de Ferro", "Batman", "Homem-Formiga", "Homem Aranha"]
 
 }

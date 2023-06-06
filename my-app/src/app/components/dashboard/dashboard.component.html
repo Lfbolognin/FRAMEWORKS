@@ -1,7 +1,8 @@
 <div class="container">
-  <div class="user_info">
+  <div class="user-info">
     <div class="profile">
-      <h2>Hello, {{ user }} !</h2>
+      <div class="img"></div>
+      <h2>Olá, {{ userr }}</h2>
     </div>
 
     <div class="menu">
@@ -12,19 +13,19 @@
         </li>
         <li>
           <i class="bx bx-user"></i>
-          <a href="#">My Profile</a>
+          <a href="#">Perfil</a>
         </li>
         <li>
           <i class="bx bx-list-ul"></i>
-          <a href="#">My subscripition</a>
+          <a href="#">Inscrições</a>
         </li>
         <li>
-          <i class="bx bxs-edit-location"></i>
-          <a href="#">My listings</a>
+          <i class="bx bxs-pin"></i>
+          <a href="#">Marcações</a>
         </li>
         <li>
           <i class="bx bx-plus"></i>
-          <a href="#">Add New listing</a>
+          <a href="#">Add Marcação</a>
         </li>
       </ul>
     </div>
@@ -34,32 +35,141 @@
     <div class="search">
       <div class="date">
         <h4>Dashboard</h4>
-        <h5>{{ currentDate | date : "dd/MM/yyyy" }}</h5>
+        <h4>{{ currentDate | date : "dd/MM/yyyy" }}</h4>
       </div>
-      <div class="input">
-        <input type="text" name="pesq" id="pesq" placeholder="Search..." />
 
-        <div class="icon">
-          <i class="bx bx-search-alt-2"></i>
-        </div>
+      <div class="input">
+        <input type="text" name="pesq" id="pesq" placeholder="Pesquisar..." />
+        <div class="icon"><i class="bx bx-search-alt"></i></div>
       </div>
     </div>
 
     <div class="info">
       <div class="box1"></div>
-
       <div class="box2"></div>
     </div>
-
     <div class="adm">
-      <div class="team_act">
+      <div class="team">
         <div class="title">
-          <div class="ball"><i class="bx bx-plus"></i></div>
-          <span>Membro do time</span>
+          <div class="ball">
+            <i class="bx bx-plus"></i>
+          </div>
+          <span>Membros do Time</span>
+        </div>
+
+        <div class="box">
+          <div class="member-1">
+            <img src="./assets/avatar.png" alt="" />
+
+            <div class="info-member">
+              <h4>Fulano fofo</h4>
+              <h5>Professor</h5>
+            </div>
+          </div>
+
+          <div class="member-1">
+            <img src="./assets/avatar.png" alt="" />
+
+            <div class="info-member">
+              <h4>Fulano fofo</h4>
+              <h5>Professor</h5>
+            </div>
+          </div>
+
+          <div class="member-1">
+            <img src="./assets/avatar.png" alt="" />
+
+            <div class="info-member">
+              <h4>Fulano fofo</h4>
+              <h5>Professor</h5>
+            </div>
+          </div>
+
+          <div class="member-1">
+            <img src="./assets/avatar.png" alt="" />
+
+            <div class="info-member">
+              <h4>Fulano fofo</h4>
+              <h5>Professor</h5>
+            </div>
+          </div>
+
+          <div class="member-1">
+            <img src="./assets/avatar.png" alt="" />
+
+            <div class="info-member">
+              <h4>Fulano fofo</h4>
+              <h5>Professor</h5>
+            </div>
+          </div>
+
+          <div class="member-1">
+            <img src="./assets/avatar.png" alt="" />
+
+            <div class="info-member">
+              <h4>Fulano fofo</h4>
+              <h5>Professor</h5>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="title">
+          <div class="ball">
+            <i class="bx bx-plus"></i>
+          </div>
+          <span>Atividades</span>
+        </div>
+
+        <div class="detail-at">
+          <div class="member-1">
+            <img src="./assets/avatar.png" alt="" />
+
+            <div class="info-member">
+              <h4>Fulano fofo</h4>
+              <h5>Professor</h5>
+              <h5 class="data">30 de maio 2023</h5>
+            </div>
+          </div>
+          <div class="member-1">
+            <img src="./assets/avatar.png" alt="" />
+
+            <div class="info-member">
+              <h4>Fulano fofo</h4>
+              <h5>Professor</h5>
+              <h5 class="data">30 de maio 2023</h5>
+            </div>
+          </div>
+          <div class="member-1">
+            <img src="./assets/avatar.png" alt="" />
+
+            <div class="info-member">
+              <h4>Fulano fofo</h4>
+              <h5>Professor</h5>
+              <h5 class="data">30 de maio 2023</h5>
+            </div>
+          </div>
+          <div class="member-1">
+            <img src="./assets/avatar.png" alt="" />
+
+            <div class="info-member">
+              <h4>Fulano fofo</h4>
+              <h5>Professor</h5>
+              <h5 class="data">30 de maio 2023</h5>
+            </div>
+          </div>
+          
         </div>
       </div>
 
-      <div class="new_task"></div>
+      <div class="new_task">
+        <div class="title">
+          <div class="ball">
+            <i class="bx bx-plus"></i>
+          </div>
+          <span>Adicionar Nova Tarefa</span>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -70,9 +180,11 @@
       <i class="bx bxs-user"></i>
     </div>
     <div class="perfil">
-      <img src="./assets/avatar.png" alt="" />
-      <h3>Luiz</h3>
-      <H5>lalalala</H5>
+      <div class="ball">
+        <img src="./assets/avatar.png" alt="" />
+      </div>
+      <h3>Rafaela</h3>
+      <H5>rafaelafranco096@gmail.com</H5>
     </div>
     <div class="trofeu">
       <div class="box">
@@ -80,9 +192,10 @@
           <div class="ball">
             <i class="bx bxs-trophy"></i>
           </div>
+
           <div class="text">
             <h5>20</h5>
-            <h5>Conquista</h5>
+            <h5>Conquistas</h5>
           </div>
         </div>
 
@@ -90,80 +203,81 @@
           <div class="ball">
             <i class="bx bx-user"></i>
           </div>
+
           <div class="text">
             <h5>10</h5>
-            <h5>Ponto</h5>
+            <h5>Pontos</h5>
           </div>
         </div>
       </div>
     </div>
+
     <div class="status">
       <div class="user-title">
-        <h3>Tarefas em andamentos</h3>
-        <a href="#">Mostrar Todos</a>
+        <h3>Tarefas em andamento</h3>
+        <a href="#">Mostrar todos</a>
       </div>
 
       <div class="task-list">
         <div class="number">
-          <span>01</span>
+          <span> 01 </span>
         </div>
+
         <div class="task-info">
-          <h4>Criar grid do login</h4>
+          <h4>Criar a grid do login</h4>
           <h5>Tempo restante: 1d</h5>
         </div>
       </div>
 
       <div class="task-list">
         <div class="number">
-          <span>02</span>
+          <span> 02 </span>
         </div>
+
         <div class="task-info">
-          <h4>Criar grid do login</h4>
+          <h4>Criar a grid do login</h4>
           <h5>Tempo restante: 1d</h5>
         </div>
       </div>
 
       <div class="user-title">
-        <h3>Tarefas Recentes</h3>
-        <a href="#">Mostrar Todos</a>
+        <h3>Tarefas recentes</h3>
+        <a href="#">Mostrar todos</a>
       </div>
 
       <div class="recent-task">
-        <div class="status">
+        <div class="numero">
           <div class="ball"></div>
           <h5>Cadastrar usuario</h5>
         </div>
+
         <h5 class="time">3d</h5>
       </div>
       <div class="recent-task">
-        <div class="status">
+        <div class="numero">
           <div class="ball"></div>
           <h5>Cadastrar usuario</h5>
         </div>
+
         <h5 class="time">3d</h5>
       </div>
       <div class="recent-task">
-        <div class="status">
+        <div class="numero">
           <div class="ball"></div>
           <h5>Cadastrar usuario</h5>
         </div>
+
         <h5 class="time">3d</h5>
       </div>
+
       <div class="recent-task">
-        <div class="status">
+        <div class="numero">
           <div class="ball"></div>
           <h5>Cadastrar usuario</h5>
         </div>
+
         <h5 class="time">3d</h5>
       </div>
-      <div class="recent-task">
-        <div class="status">
-          <div class="ball"></div>
-          <h5>Cadastrar usuario</h5>
-        </div>
-        <h5 class="time">3d</h5>
-      </div>
-      
     </div>
   </div>
 </div>

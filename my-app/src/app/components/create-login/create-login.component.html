@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="img">
+        
+        <h1>Bem-vindo!</h1>
+
+    </div>
+    <div class="login">
+
+        <h2>CRIE SUA CONTA</h2>
+
+        <div *ngIf="isError" class="error">
+
+            <i class='bx bxs-error'></i><span>Algo não está certo!</span>
+
+        </div>
+
+        <div *ngIf="isCorrect" class="right">
+
+            <i class='bx bx-check'></i><span>Conta criada!</span>
+
+        </div>
+
+
+        <div class="input">
+            <i class='bx bx-user'></i>
+            <input type="text" name="Nome" id="Nome" placeholder="Nome" [(ngModel)]="name">
+        </div>
+
+        <div class="input">
+            <i class='bx bx-envelope-open'></i>
+            <input type="text" name="Email" id="" placeholder="E-mail" [(ngModel)]="user">
+        </div>
+
+        <div class="input">
+            <i class='bx bxs-lock-alt'></i>
+            <input type="password" name="password" id="password" placeholder="Senha" [(ngModel)]="pwd"> <i class='bx bx-low-vision' ></i>
+        </div>
+
+        <div class="input">
+            <i class='bx bx-lock-alt'></i>
+            <input type="password" name="password" id="password" placeholder="Confirme a senha" [(ngModel)]="pwd1"> <i class='bx bx-low-vision' ></i>
+        </div>
+
+            <div class="botoes">
+                <button class="botao2">VOLTAR</button> 
+                <button (click)="login()">CONTINUAR</button> 
+            </div>
+
+            <h4>Já tem uma conta? Faça o login!</h4>
+           
+
+        </div>
+</div>
