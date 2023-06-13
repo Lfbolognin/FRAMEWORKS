@@ -1,0 +1,30 @@
+.container{
+background:linear-gradient(#d0b9c9, #faa8d1);
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.img{
+width: 400px;
+height: 200px;
+/* top: 50%; */
+}
+
+
+.calc{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.calc input{
+ width: 25px;
+height: 30px;
+margin: 8px;
+outline: none;
+font-size: 20px;
+}

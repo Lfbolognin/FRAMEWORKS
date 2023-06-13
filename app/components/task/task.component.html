@@ -1,0 +1,34 @@
+<div class="content">
+  <div class="container">
+    <h1>Formulário</h1>
+    <form>
+      <input
+        type="text"
+        name="Task"
+        placeholder="Digite o nome da sua Task"
+        [formControl]="task"
+      /><br />
+      <input
+        type="text"
+        name="descrição da task"
+        placeholder="Descreva a sua task"
+        [formControl]="descricao"
+      /><br />
+      <input
+        type="text"
+        name="responsavel da task"
+        placeholder="Digite quem é o responsavel pela task"
+        [formControl]="responsavel"
+      /><br />
+      <h3 class="ini">Data de inicio da Task</h3>
+      <input type="date" name="data de criação" [formControl]="dt_inicio"/> <br/>
+      <h3 class="final">Data de finalização da Task</h3>
+      <input type="date" name="data de termino" [formControl]="dt_fim"/> <br/>
+    </form>
+    <br />
+    <div class="button">
+      <button class="cancel">Cancelar</button>
+      <button class="send" (click)="addTask()">Enviar</button>
+    </div>
+  </div>
+</div>

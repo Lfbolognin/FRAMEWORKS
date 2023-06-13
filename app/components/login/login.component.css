@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(245, 154, 225),rgb(253, 187, 187));
+}
+
+.header{
+    padding-right: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+
+ .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 10px 10px 50px 10px rgb(160, 73, 138);
+    background: white;
+    width: 450px;
+    height: 450px;
+    border-radius: 30px;
+    
+
+}
+.remember {
+    display: flex;
+    width: 340px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.remember > div {
+    display: flex;
+    gap: 2px;
+}
+h4 {
+    font-size: 12px;
+    font-weight: 200;
+    color: #999;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    background: linear-gradient(rgb(245, 154, 225),rgb(241, 175, 223));
+    box-shadow: 3px 3px 10px 2px rgb(160, 73, 138);
+    color: #f8f8f8;
+    font-size: 14px;
+    margin: 10px;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+a {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.;
+    color: #090909;
+    text-decoration: none;
+}
+ .login {
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 3px 3px 10px 2px rgb(160, 73, 138);
+    width: 350px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 20px;
+    padding-left: 11px;
+    display: flex;
+    align-items: center;
+
+}
+.login input{
+    font-family: 'Nunito', sans-serif;
+    width: 270px;
+    height: 30px;
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    opacity: 0.9s;
+
+}
+
+i{
+    font-size: 30px;
+    color: rgb(255, 127, 204);
+    margin: 10px;
+}
+.bxs-low-vision{
+    cursor: pointer;
+}
+ 
+.error {
+    border: 2px solid rgb(237, 13, 140);
+    margin-top: 7px;
+    width: 280px;
+    height: 40px;
+    background: rgb(245, 183, 224);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+}
+
+.error i {
+    color:rgb(21, 20, 20);
+    margin-right: 6px;
+    
+}
+
+.header i {
+    color: rgb(255, 70, 153);
+}
+
+button:hover{
+    filter: brightness(110%);
+}
