@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none  ;
 }
 
 h3 {
@@ -162,7 +163,7 @@ li:hover {
   height: 50px;
   border-radius: 5px;
 }
-.content .adm  .title .ball {
+.content .adm .title .ball {
   background: #56aca6;
   display: flex;
   border-radius: 50%;
@@ -172,7 +173,7 @@ li:hover {
   justify-content: center;
   margin: 0 15px 0 25px;
 }
-.content .adm  .title .ball i {
+.content .adm .title .ball i {
   color: white;
   font-size: 22px;
 }
@@ -400,3 +401,46 @@ i:hover {
 .content .adm .team .detail-at .member-1 .data {
   margin-top: 10px;
 }
+
+.container .content .new_task .tasks .nome_t {
+justify-content: center;
+align-items: center;
+display: flex;
+border-radius: 10px;
+margin: 10px;
+padding: 10px;
+}
+.container .content .new_task .tasks .descricao_t {
+justify-content: center;
+align-items: center;
+display: flex;
+border-radius: 10px;
+margin: 10px;
+padding: 10px;
+}
+.container .content .new_task .tasks .responsavel_t {
+justify-content: center;
+align-items: center;
+display: flex;
+border-radius: 10px;
+margin: 10px;
+padding: 10px;
+}
+.container .content .new_task .tasks .dt_inicio_t {
+justify-content: center;
+align-items: center;
+display: flex;
+border-radius: 10px;
+margin: 10px;
+padding: 10px;
+}
+.container .content .new_task .tasks .fim_t {
+justify-content: center;
+align-items: center;
+display: flex;
+border-radius: 10px;
+margin: 10px;
+padding: 10px;
+}
+
+

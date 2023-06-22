@@ -50,7 +50,7 @@
     </div>
     <div class="adm">
       <div class="team">
-        <div class="title">
+        <div class="title" (click)="addUser()">
           <div class="ball">
             <i class="bx bx-plus"></i>
           </div>
@@ -161,15 +161,44 @@
       </div>
 
       <div class="new_task">
-        <a routerLink="/task">
-        <div class="title">
+        <div class="title" (click)="addTask()">
           <div class="ball">
             <i class="bx bx-plus"></i>
           </div>
           <span>Adicionar Nova Tarefa</span>
         </div>
-      </a>
-        <div class="tasks"></div>
+
+        <div class="tasks">
+          <div class="nome_t">
+            <ul>
+              <li *ngFor="let t of tasks">{{ t.nome }}</li>
+            </ul>
+          </div>
+
+          <div class="descricao_t">
+            <ul>
+              <li *ngFor="let t of tasks">{{ t.descricao }}</li>
+            </ul>
+          </div>
+
+          <div class="responsavel_t">
+            <ul>
+              <li *ngFor="let t of tasks">{{ t.responsavel }}</li>
+            </ul>
+          </div>
+
+          <div class="dt_inicio_t">
+            <ul>
+              <li *ngFor="let t of tasks">{{ t.dt_inicio }}</li>
+            </ul>
+          </div>
+
+          <div class="dt_fim_t">
+            <ul>
+              <li *ngFor="let t of tasks">{{ t.dt_fim }}</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>

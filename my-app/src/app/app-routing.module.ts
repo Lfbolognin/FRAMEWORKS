@@ -9,9 +9,11 @@ import { GridComponent } from './components/grid/grid.component';
 import { TrabalhoComponent } from './components/trabalho/trabalho.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { UserComponent } from './components/user/user.component';
 
 const routes: Routes = [
   {path: "login-beto", component:LoginBetoComponent},
+  {path: "user", component:UserComponent},
   {path: "login-rafa", component:LoginComponent},
   {path: "task", component:TaskComponent},
   {path: "create-login", component:CreateLoginComponent},
